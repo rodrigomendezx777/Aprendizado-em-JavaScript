@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+    <style>
+        body{
+            background-color: chartreuse;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicios iniciais em javascript</h1>
+    <p>Aulas do curso em video</p>
+    <p>aula 06 sobre tratamento de dados</p>
+
+    <h1>alguns comandos a mais...</h1>
+
+    <script>
+        //---------------------exercicios passados na aula------------------//
+
+        var nome = window.prompt("qual é seu nome? ")
+        document.write(`seu nome tem ${nome.length} letras`) 
+        
+    // o comando ".length" é utilizado para contar quantas letras possuem na variavel atribuida antes do ponto.
+    // o comando "document.write()" serve para escrever na tela, tambêm temos o "document.writeLn()" que serve para escrever na tela e pular para a linha de baixo
+    
+
+    //com o comando "document.write()" é possivel tambêm escrever tags html dentro por exemplo:
+    var nome = window.prompt("qual é seu nome? ")
+    document.write(`<h1> seu nome tem ${nome.length} letras. </h1> `) 
+    // aqui o resultado será mostrado na tela em formatação <H1>
+
+
+    //um outro comando é o ".toUpperCase()" que deixa as letras em maiusculo, veja no exemplo a baixo:
+    var nome = window.prompt("qual é seu nome? ")
+    document.write(`Olá ${nome}, seu nome em maiúsculo fica ${nome.toUpperCase()}.`)
+
+    //agora o contrario do exemplo de cima o comando ".toLowerCase()" deixa as letras em minusculo, veja no exemplo a baixo:
+    var nome = window.prompt("Digite seu nome: ")
+    document.write(`Olá ${nome}, seu nome em minúsculo fica ${nome.toLowerCase()}.`)
+
+
+
+     //----------------exercicios para fixação por minha conta--------------------//
+
+    var nome = window.prompt("qual seu nome?" )
+    var carro = window.prompt("qual seu carro favorito?" )
+    document.write(`Meus <strong>PARABÉNS ${nome.toUpperCase()}</strong>, seu nome que contém ${nome.length} letras, e você acaba de ganhar um(a) ${carro}`)
+
+    </script>
+</body>
+</html>
